@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Library</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Personal Book Library</h1>
+
+    <div class="add-book">
+      <input id="title" type="text" placeholder="Book Title" />
+      <input id="author" type="text" placeholder="Author" />
+      <input id="category" type="text" placeholder="Category" />
+      <button onclick="addBook()">Add Book</button>
+    </div>
+
+    <div class="search-bar">
+      <input id="search" type="text" placeholder="Search books..." oninput="searchBooks()" />
+    </div>
+
+    <h2>📖 Book Catalog</h2>
+    <ul id="book-list"></ul>
+
+    <h2>📘 Borrowing History</h2>
+    <ul id="history-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
